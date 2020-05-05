@@ -1,0 +1,42 @@
+body{
+	
+}
+/* this is the CSS for the heading */
+.heading{
+	background-image: url(images/header.jpg);
+	width: 100%;
+	height: 350px;
+	color: white;
+	text-align: center;
+	padding-top: 150px;
+}
+
+.title{
+	font-size: 200px;
+	margin-top: 11px;
+
+}
+
+/* this is the CSS for the body */
+.content{
+
+	margin: 100px 0 0 500px;
+	padding: 0 20px 0 20px;
+	width: 900px;
+	height: 300px;
+	background-color: #c4c4c4;
+	box-shadow: 0 0 20px -10px black;
+	text-align: center;
+}
+
+h1{
+	font-family: arial;
+}
+
+#table{
+	text-align: left;
+}
+
+
+
+

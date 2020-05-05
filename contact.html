@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stay in Contact</title>
+
+<!-- this is the external CSS link -->
+	<link rel="stylesheet" type="text/css" href="contact.css">
+
+<!-- this is the bootstrap CSS link -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<!-- this is the bootstrap JS link -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- this it the heading of the about us page -->	
+	<div class="heading">
+		<h1 class="title"> Contact Us </h1>
+	</div>
+
+<!-- this it the body of the about us page -->	
+	<div class="content">
+		<h1> Send us your message </h1>
+		<form action="" method="" class="form-horizontal">
+		
+		<!-- email -->
+			<div class="form-group">
+				<label for="email" class="col-7 control-lable">Email Address</label>
+				<div class="col-5">
+					<input placeholder="Your Email Address" type="email" class="form-control" id="email"/>
+				</div>
+			</div>
+
+		<!-- radio -->
+		<p class="anonymous"> Keep me anonymous </p>
+			<div class="radio-group">
+				<label>
+					<input type="radio" value="yes" name="true">
+					Yes
+					<span></span>
+				</label>
+				<label>
+					<input type="radio" value="no" name="true">
+					No
+					<span></span>
+				</label>
+			</div>
+			
+		<!-- textarea -->
+			<div>
+				<textarea placeholder="Hello..." class="form-control"></textarea>
+			</div>
+		<!-- submit button -->
+			<input type="submit" id="sign-btn" class="btn btn-dark" value="Send message">
+		
+		</form>
+		
+	</div>
+
+	<div class="review-content">
+		<h1> Our Good Reviews </h1>
+	<br>
+			<section class="avitar" id="overlay">
+				<img src="images/avitar-girl.jpg" alt="avitar-girl" class="avitar">
+			</section>
+
+			<section class="review">
+				<h4> Anonymous </h4>
+				<p> "Service was quick, quality is fantastic, thank-you Door 2 Door Cuisine" </p>
+			</section>
+	<hr>
+			<section class="avitar-man" >
+				<img src="images/avitar-man.jpg" alt="avitar-man" class="avitar" id="overlay">
+			</section>
+
+			<section class="review-man">
+				<h4> Sean </h4>
+				<p> "With this on going pandemic, we can stay at home and eat healthy.<br> A total life saver." </p>
+			</section>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+body{
+	
+	background-image: url("images/main.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	
+}
+
+.content{
+	background-color: #8dc643;
+	margin-top: 200px;
+	width: 800px;
+	height: 400px;
+	margin: 300px 0px 0 550px;
+	text-align: center;
+	padding-top: 80px;
+	border: 6px white solid;
+	opacity: 95%;
+
+
+}
+
+.welcome{
+	font-size: 40px;
+}
+
+.name{
+	padding-bottom: 40px;
+	font-size: 50px;
+}
+
+h2{
+	font-family: verdana;
+}
+
+h1{
+	font-family: verdana;
+}

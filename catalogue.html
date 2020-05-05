@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Door 2 Door Cuisine</title>
+<!-- this is the external CSS link -->
+	<link rel="stylesheet" type="text/css" href="catalogue.css">
+
+<!-- this is the bootstrap CSS link -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<!-- this is the bootstrap JS link -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+	<script type="text/javascript" src="catalogue.js"></script>
+
+</head>
+<body onload="mySession()">
+<!-- Navbar -->
+	<nav class="navbar navbar-dark bg-dark">
+		<a href="#" class="navbar-brand"> Door 2 Door Cuisine </a>
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a href="cart.html" class="nav-link" onclick="cart()" > My Shopping Cart </a>
+			</li>
+		</ul>
+	</nav>
+
+<br>
+
+<!-- hover table -->
+<!-- links to the two other pages created -->
+<h2> Things you should know about us </h2>
+	
+	<table class="table table-hover">
+	
+		<tbody>
+
+			<tr>
+				<td class="benefit"><a href="about.html" target="_blank" id="link"> Who we are </a></td>
+			</tr>
+
+			<tr>
+				<td class="benefit"><a href="contact.html" target="_blank" id="link"> How to contact us </a></td>
+			</tr>
+
+		</tbody>
+
+
+	</table>
+
+<br>
+
+<!-- bootstrap grid system -->
+<!-- a responsive image means that it should scale according to the parent element. In other words the image will grow according to the size of the parent. The responsive attribute I used is img-fluid, this resizes the images to fit perfectly -->
+
+
+	<h2 class="veg"> Order the finest vegtables and have them delivered to your door </h2>
+	<div class="container my-container">
+		<div class="row my-row">
+	
+	<!-- Image expand when hovered over -->
+	<!-- Stock up modal popup -->		
+			<div class="col-4 my-col rounded">
+				<div class="card">
+					<img src="images/meal-1.jpg" alt="large box of vegtables" class="img-fluid img-thumbnail">
+					<h5 class="card-title"> Stock Up </h5>
+					<p class="card-text"> Stock your fridge with our freshly picked, organic fruit and vegtables </p>
+					<div class="center">
+						<input type="checkbox" id="click" name="more info">
+						<label for="click" class="click-me">More info</label>
+						<div class="content">
+							<div class="header">
+								<h2> Stock Up </h2>
+								<label for="click" class="fas fa-times"></label>
+							</div>
+								<label for="click" class="fas fa-check"></label>
+								<p> vegtables may differ from season and availability</p>
+							<div class="line"></div>
+								<label for="click" class="close-btn">Close</label>
+						</div>
+					</div>
+					<a href="#" class="btn btn-success" id="button" onclick="add2cart('Stock up')"> add to cart </a>
+				</div>
+			</div>
+
+			<div class="col-4 my-col rounded">
+				<div class="card">
+					<img src="images/meal-2.jpg" alt="small box of vegtables" class="img-fluid img-thumbnail">
+					<h5 class="card-title"> A days meal for 4 </h5>
+					<p class="card-text"> Enough freshly picked, organic vegtables to feed a family of 4 for a day </p>
+					<a href="#" class="btn btn-success" onclick="add2cart('A meal x4')"> add to cart </a>
+				</div>
+			</div>
+
+			<div class="col-4 my-col rounded">
+				<div class="card">
+					<img src="images/meal-3.jpg" alt="medium box of vegtables" class="img-fluid img-thumbnail">
+					<h5 class="card-title"> A days meal for 6 </h5>
+					<p class="card-text"> Enough freshly picked, organic vegtables to feed a family of 6 for a day </p>
+					<a href="#" class="btn btn-success" onclick="add2cart('A meal x6')"> add to cart </a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+<br>
+	<h2 class="parcel"> Order our top quality food pacels and you can get cooking in no time </h2>
+	<div class="container my-container">
+		<div class="row my-row">
+			<div class="col-3 my-col rounded">
+				<div class="card">
+					<img src="images/meal-4.jpg" alt="large box of vegtables" class="img-fluid img-thumbnail">
+					<h5 class="card-title"> Bolognese Pacel </h5>
+					<p class="card-text"> This pacel holds the ingrdients for a Bolognese Meal </p>
+					<a href="#" class="btn btn-success" onclick="add2cart('Bolognese')"> add to cart </a>
+				</div>
+			</div>
+
+			<div class="col-3 my-col rounded">
+				<div class="card">
+					<img src="images/meal-5.jpg" alt="large box of vegtables" class="img-fluid img-thumbnail">
+					<h5 class="card-title"> Mediterranean Pacel </h5>
+					<p class="card-text"> This pacel holds the ingrdients for a Mediterranean Meal </p>
+					<a href="#" class="btn btn-success" onclick="add2cart('Mediterranean')"> add to cart </a>
+				</div>
+			</div>
+
+			<div class="col-3 my-col rounded">
+				<div class="card">
+					<img src="images/meal-6.jpg" alt="large box of vegtables" class="img-fluid img-thumbnail">
+					<h5 class="card-title"> Full Stack Pacel </h5>
+					<p class="card-text">This pacel holds the ingrdients for a Full Stack Snack </p>
+					<a href="#" class="btn btn-success" onclick="add2cart('Full Stack')"> add to cart </a>
+				</div>
+			</div>
+
+			<div class="col-3 my-col rounded">
+				<div class="card">
+					<img src="images/meal-7.jpg" alt="large box of vegtables" class="img-fluid img-thumbnail">
+					<h5 class="card-title"> Goulash Pacel </h5>
+					<p class="card-text">This pacel holds the ingrdients for a Goulash Meal that you can enjoy</p>
+					<a href="#" class="btn btn-success" onclick="add2cart('Goulash')"> add to cart </a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<br>
+
+	<h2 class="meal"> Order our gourmet ready meals if you're not in the mood to cook </h2>
+	<div class="container my-container">
+		<div class="row my-row">
+			<div class="col-4 my-col rounded">
+				<div class="card">
+					<img src="images/meal-8.jpg" alt="large box of vegtables" class="img-fluid img-thumbnail">
+					<h5 class="card-title"> Ready Made Sushi </h5>
+					<p class="card-text">We have a large range of freshly made sushi ready to be enjoyed</p>
+					<a href="#" class="btn btn-success" onclick="add2cart('Sushi')"> add to cart </a>
+				</div>
+			</div>
+			<div class="col-4 my-col rounded">
+				<div class="card">
+					<img src="images/meal-9.jpg" alt="large box of vegtables" class="img-fluid img-thumbnail">
+					<h5 class="card-title"> Ready Made Sandwiches </h5>
+					<p class="card-text">Healthy sandwiches of your choice, filled with the best ingredients</p>
+					<a href="#" class="btn btn-success" onclick="add2cart('Sandwiches')"> add to cart </a>
+				</div>
+			</div>
+			<div class="col-4 my-col rounded">
+				<div class="card">
+					<img src="images/meal-10.jpg" alt="large box of vegtables" class="img-fluid img-thumbnail">
+					<h5 class="card-title"> Ready Made Salad </h5>
+					<p class="card-text">Enjoy our salads made from the finest of vegtables</p>
+					<a href="#" class="btn btn-success" onclick="add2cart('Salad')"> add to cart </a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<hr>
+<br>
+
+<!-- horizontal form -->
+<h2 class="signup"> Sign up to recieve a discount </h2>
+<form action="" method="" class="form-horizontal">
+	<div class="form-group">
+		<label for="email" class="col-7 control-lable">Email Address</label>
+		<div class="col-5">
+			<input type="email" class="form-control" id="email"/>
+		</div>
+
+	</div>
+	<div class="form-group">
+		<label for="password" class="col-7 control-lable">Password</label>
+		<div class="col-5">
+			<input type="password" class="form-control" id="password"/>
+		</div>
+	</div>
+
+<!-- I inserted the backgroung color changing request here when this button is clicked -->
+	<div>
+		<a href="signup.html" target="_blank" id="sign-btn" class="btn btn-dark">
+			Sign up
+		</a>
+	</div>
+</form>	
+
+</body>	
+</html><!-- -->

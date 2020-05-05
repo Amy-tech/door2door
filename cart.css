@@ -1,0 +1,208 @@
+body{
+
+}
+/* this is the CSS for the heading */
+.heading{
+	background-image: url(images/header.jpg);
+	width: 100%;
+	height: 350px;
+	color: white;
+	text-align: center;
+	padding-top: 150px;
+	
+}
+
+.title{
+	font-size: 220px;
+}
+
+
+/* this is the CSS for the body */
+.content{
+
+	margin: 100px 0 0 500px;
+	padding: 0 20px 0 20px;
+	width: 900px;
+	height: 1050px;
+	background-color: #c4c4c4;
+	box-shadow: 0 0 20px -10px black;
+	text-align: center;
+}
+
+h1{
+	font-family: arial;
+}
+
+.output{
+	margin: 20px 0 0 35px;
+	width: 800px;
+	height: 300px;
+	background-color: whitesmoke;
+}
+
+/* this is the CSS for the Total div */
+#myTotal{
+	width: 800px;
+	height: 250px;
+	background-color: whitesmoke;
+	margin: 10px 0 0 35px ;
+}
+
+#sub{
+	
+	padding: 20px;
+	text-align: left;
+}
+
+#subtotal{
+	text-align: right;
+	padding-right: 50px;
+	margin-top: -60px;
+}
+
+#vat{
+	padding-left: 20px;
+	text-align: left;
+	margin-top: 50px;
+}
+
+#vatTotal{
+	padding-right: 50px;
+	text-align: right;
+	margin-top: -40px;
+}
+
+#vatR{
+	margin-left: 60px;
+}
+
+
+#listTotal{
+	padding-left: 20px;
+	text-align: left;
+}
+
+#total{
+	padding-right: 50px;
+	text-align: right;
+	margin-top: -40px;	
+}
+
+#R{
+	margin-left: 45px;
+}
+
+
+#proceed{
+	margin-top: 100px;
+
+	width: 150px;
+	height: 50px;
+	border-color: #8dc643;
+	border-width: 4px;
+	border-radius: 6px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 20px
+}
+
+#proceed:hover{
+	background-color: #8dc643;
+	color: white;
+}
+
+	/* dropdown CSS */
+
+#drop_Wrapper{
+	margin: 0 auto;
+	margin-right: 40px;
+	margin-top: 40px;
+}
+
+#drop ul {
+	list-style: none;
+	position: relative;
+
+}
+
+#drop ul li a:link {
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-size: 25px;
+}
+
+#drop ul li a:hover {
+	background-color: #8dc643;
+	color: white;
+	border-radius: 5px;
+}
+
+#drop ul ul {
+	position: absolute;
+	display: none;
+
+}
+
+#drop ul ul li {
+	width: 700px;
+	display: block;
+	text-align: center;
+}
+
+	/* show and hide CSS */
+
+#hAndS{
+	margin: -40px 0px 0 500px;
+}
+
+#show{
+	cursor: pointer;
+}
+
+#hide{
+	display: none;
+}
+
+	/* chained effect function */
+
+#div1{
+	margin-top: 60px; 
+	width: 100px;
+	height: 100px;
+	background-color: #8dc643;
+	border-radius: 50%;
+	margin-left: 650px;
+}
+
+#div2{
+	margin-top: -100px; 
+	width: 100px;
+	height: 100px;
+	background-color: #7ec1ec;
+	border-radius: 50%;
+	margin-left: 360px;
+}
+
+#div3{
+ 	margin-top: -100px;
+	width: 100px;
+ 	height: 100px;
+	background-color: #f15278;
+	border-radius: 50%;
+	margin-left: 100px;
+}
+
+.goodness{
+	text-align: center;
+	padding-top: 35px;
+}
+
+	/* output css */
+
+#cartList{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: left;
+}
